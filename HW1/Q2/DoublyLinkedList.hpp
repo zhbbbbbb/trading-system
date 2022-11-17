@@ -19,7 +19,7 @@ class ListIterator;
 template <typename T>
 class DoublyLinkedList: public LinkedList<T>{
 
-public:
+private:
     std::shared_ptr<DNode<T>> head_ptr;
     std::shared_ptr<DNode<T>> tail_ptr;
     int size;
