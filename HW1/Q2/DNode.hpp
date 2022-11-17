@@ -7,13 +7,14 @@ template <typename T>
 class DNode : public Node<T>
 {
 public:
+    T val;
+    std::shared_ptr<DNode<T>> next;
+    std::shared_ptr<DNode<T>> prev;
+    
     DNode();            
     DNode(T x);
     virtual ~DNode();
 
-    T val;
-    std::shared_ptr<DNode<T>> next;
-    std::shared_ptr<DNode<T>> prev;    //point to the previous one
 };
 
 #ifndef DNode_CPP
