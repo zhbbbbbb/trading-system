@@ -53,13 +53,13 @@ using boost::posix_time::time_duration;
 using boost::posix_time::microsec_clock;
 
 //CUSIP     Maturity    Coupon  PV01
-//91282CFX4 11/30/2024  4.500   0.01879
-//91282CFW6 11/15/2025  4.500   0.02761
-//91282CFZ9 11/30/2027  3.875   0.04526
-//91282CFY2 11/30/2029  3.875   0.06170
-//91282CFV8 11/15/2032  4.125   0.08598
-//912810TM0 11/15/2042  4.000   0.14420
-//912810TL2 11/15/2052  4.000   0.19917
+//91282CFX4Â 11/30/2024Â Â 4.500 Â  0.01879
+//91282CFW6Â 11/15/2025 Â 4.500Â Â  0.02761
+//91282CFZ9Â 11/30/2027 Â 3.875Â Â  0.04526
+//91282CFY2Â 11/30/2029 Â 3.875 Â  0.06170
+//91282CFV8Â 11/15/2032Â Â 4.125 Â  0.08598
+//912810TM0Â 11/15/2042 Â 4.000Â Â  0.14420
+//912810TL2Â 11/15/2052Â  4.000   0.19917
 
 
 int main()
@@ -141,7 +141,7 @@ int main()
 	bondAlgoExecutionService.AddListener(&bondExecutionServiceListener);//
 	bondPricingService.AddListener(&bondAlgoStreamingServiceListener);//
 	bondAlgoStreamingService.AddListener(&bondStreamingServiceListener);//
-	bondPricingService.AddListener(&bondGUIServiceListener);// // only call bondGUIService.OnMessage() 100 times 
+	bondPricingService.AddListener(&bondGUIServiceListener);// 
 	bondExecutionService.AddListener(&bondTradeBookingServiceListener);//
 	bondPositionService.AddListener(&bondPositionHistoricalDataServiceListener);//
 	bondRiskService.AddListener(&bondRiskHistoricalDataServiceListener);//
