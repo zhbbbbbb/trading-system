@@ -1,3 +1,6 @@
+Compile using G++:
+g++ [main.cpp File Path] -o test -I [boost_1_77_0 Folder Path]
+
 When A registers a listener on B:
 - Alistener is a subclass of ServiceListener<B's data member type>
 - AListener has data member A*
